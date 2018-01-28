@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mk.news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:xlargeScreens="true" />
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:anyDensity="true" />
+    <supports-screens android:resizeable="true" />
+    <supports-screens android:anyDensity="true" />
+
+    <supports-screens android:screenDensity="xxxhdpi" />
+    <supports-screens android:screenDensity="hdpi" />
+    <supports-screens android:screenDensity="ldpi" />
+    <supports-screens android:screenDensity="xhdpi" />
+    <supports-screens android:screenDensity="xxhdpi" />
+    <supports-screens android:screenDensity="mdpi" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Fragment_1"></activity>
+    </application>
+
+</manifest>
